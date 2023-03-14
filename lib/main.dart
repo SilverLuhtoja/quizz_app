@@ -4,6 +4,7 @@ import 'package:quizz_app/views/score.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     initialRoute: '/',
     routes: {
       '/': (context) => Home(),

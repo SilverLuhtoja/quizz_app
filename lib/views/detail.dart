@@ -67,8 +67,9 @@ class _DetailViewState extends State<DetailView> {
               fit: BoxFit.fill,
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(20),
+          Container(
+            height: 100,
+            padding: EdgeInsets.all(20),
             child: Text(
               widget.category.questions[counter].question,
               style: const TextStyle(

@@ -23,8 +23,8 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      body: Wrap(
-          spacing: 20,
+      body: GridView.count(
+          crossAxisCount: 2,
           children:
               categories.map((cat) => CategoryCard(category: cat)).toList()),
     );

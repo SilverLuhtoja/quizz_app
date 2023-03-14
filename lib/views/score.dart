@@ -32,8 +32,7 @@ class _ScoreViewState extends State<ScoreView> {
             const SizedBox(height: 30),
             TextButton(
               onPressed: () {
-                // TODO: reset all states
-                Navigator.pushNamed(context, "/");
+                Navigator.of(context).popUntil(ModalRoute.withName('/'));
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
